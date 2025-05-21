@@ -1,4 +1,4 @@
-name: testing the runner
+name: Testing the runner
 
 on:
   push:
@@ -7,12 +7,11 @@ on:
     branches: [ main ]
 
 jobs:
-  
   just-test:
     runs-on: self-hosted
-    
+
     steps:
       - uses: actions/checkout@v3
-      - name: ruuning the shell script
+      - name: Running the shell script
         run: |
-          echo "Hi iam Runner"
+          echo "Hi, I am Runner"
