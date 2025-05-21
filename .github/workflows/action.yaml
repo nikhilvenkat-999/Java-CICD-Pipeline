@@ -11,7 +11,7 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - uses: actions/checkout@v3
+      # - uses: actions/checkout@v3
       - name: Running the shell script
         run: |
           echo "Hi, I am Runner"
