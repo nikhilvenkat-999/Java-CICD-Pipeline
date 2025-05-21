@@ -1,0 +1,18 @@
+name: testing the runner
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  
+  just-test:
+    runs-on: self-hosted
+    
+    steps:
+      - uses: actions/checkout@v3
+      - name: ruuning the shell script
+        run: |
+          echo "Hi iam Runner"
